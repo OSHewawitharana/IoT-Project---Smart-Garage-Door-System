@@ -1,0 +1,1244 @@
+[
+    {
+        "id": "e4d0e744ba32bd85",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "76250f154120f64f",
+        "type": "mqtt-broker",
+        "name": "hiveMQ",
+        "broker": "b895136301624cc185f3f43c626c0890.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "true",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "42334af7632a3337",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "963049d8af28b84e",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "home",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "b3623416c933bf42",
+        "type": "ui_group",
+        "name": "",
+        "tab": "963049d8af28b84e",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fa590f63a7cb6e3e",
+        "type": "ui_group",
+        "name": "",
+        "tab": "6f74ac086cb10511",
+        "order": 3,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "cc8354fbc1bac1bd",
+        "type": "ui_group",
+        "name": "",
+        "tab": "dc3616cee09daf84",
+        "order": 3,
+        "disp": true,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4973ea20bc2509ad",
+        "type": "MySQLdatabase",
+        "name": "",
+        "host": "127.0.0.1",
+        "port": "3306",
+        "db": "garagedoorsystem",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "6f74ac086cb10511",
+        "type": "ui_tab",
+        "name": "Charts",
+        "icon": "fa-line-chart",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "dc3616cee09daf84",
+        "type": "ui_tab",
+        "name": "Environment Data",
+        "icon": "fa-info-circle ",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "6542dd18dd86112f",
+        "type": "ui_tab",
+        "name": "Notification",
+        "icon": "fa-bell",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "21310330e75f33a9",
+        "type": "ui_group",
+        "name": "Notification",
+        "tab": "6542dd18dd86112f",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a7cadf0970387193",
+        "type": "mqtt in",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "topic": "garage/door/status",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "76250f154120f64f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 130,
+        "y": 460,
+        "wires": [
+            [
+                "48ebbc14c5f64037",
+                "d58fbfdc3a74bdca",
+                "a62faf10c7866938"
+            ]
+        ]
+    },
+    {
+        "id": "48ebbc14c5f64037",
+        "type": "json",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "property": "payload",
+        "action": "obj",
+        "pretty": false,
+        "x": 330,
+        "y": 360,
+        "wires": [
+            [
+                "2e749f7942e144bd",
+                "64c474fd258c80b3",
+                "386d68c86cb73864"
+            ]
+        ]
+    },
+    {
+        "id": "d58fbfdc3a74bdca",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Door Status",
+        "func": "msg.payload = msg.payload.door_status;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "5f71cc0e9f27c121"
+            ]
+        ]
+    },
+    {
+        "id": "2e749f7942e144bd",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Environmental Data",
+        "func": "// Extract sensor data from the incoming message\nvar temperature = msg.payload.temp;\nvar humidity = msg.payload.humidity;\nvar pressure = msg.payload.pressure;\n\n// Store sensor data in global context\nglobal.set(\"temperature\", temperature);\nglobal.set(\"humidity\", humidity);\nglobal.set(\"pressure\", pressure);\n\n// Prepare messages for each sensor value\nconst tempMsg = { topic: \"temperature\", payload: temperature };\nconst humidityMsg = { topic: \"humidity\", payload: humidity };\nconst pressureMsg = { topic: \"pressure\", payload: pressure };\n\n// Return an array of messages for different outputs\nreturn [tempMsg, humidityMsg, pressureMsg];\n",
+        "outputs": 3,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "560cbba3a115c6b9",
+                "1e3a5508303558f4"
+            ],
+            [
+                "33fcaa6e68e6d547",
+                "4ad57ca8a4ecf1db"
+            ],
+            [
+                "4ab2d97ab62b834a",
+                "5aa3c469ed1717cb"
+            ]
+        ]
+    },
+    {
+        "id": "560cbba3a115c6b9",
+        "type": "ui_gauge",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "cc8354fbc1bac1bd",
+        "order": 1,
+        "width": "12",
+        "height": "8",
+        "gtype": "gage",
+        "title": "Temperature",
+        "label": "",
+        "format": "{{value}} °C",
+        "min": "-40",
+        "max": "125",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 890,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "33fcaa6e68e6d547",
+        "type": "ui_gauge",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "cc8354fbc1bac1bd",
+        "order": 2,
+        "width": "12",
+        "height": "8",
+        "gtype": "gage",
+        "title": "Humidity",
+        "label": "",
+        "format": "{{value}} %",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 880,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "4ab2d97ab62b834a",
+        "type": "ui_gauge",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "cc8354fbc1bac1bd",
+        "order": 3,
+        "width": "12",
+        "height": "8",
+        "gtype": "gage",
+        "title": "Pressure",
+        "label": "",
+        "format": "{{value | number:2}} hPa",
+        "min": "500",
+        "max": "1500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 880,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5f71cc0e9f27c121",
+        "type": "ui_text",
+        "z": "e4d0e744ba32bd85",
+        "group": "b3623416c933bf42",
+        "order": 1,
+        "width": 12,
+        "height": 2,
+        "name": "",
+        "label": "Door Status",
+        "format": "<font color={{value == 'open' ? 'green' : 'red'}}>{{value == 'open' ? 'Open' : 'Closed'}}</font>",
+        "layout": "col-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "31",
+        "color": "#1c1b1d",
+        "x": 550,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "64c474fd258c80b3",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Format Data to Save",
+        "func": "// Extract sensor data from incoming MQTT message\nvar temperature = msg.payload.temp;\nvar humidity = msg.payload.humidity;\nvar pressure = msg.payload.pressure;\n\n// Log extracted values for debugging\nnode.warn(`Temperature: ${temperature}`);\nnode.warn(`Humidity: ${humidity}`);\nnode.warn(`Pressure: ${pressure}`);\n\n// Check if any value is undefined\nif (temperature === undefined || humidity === undefined || pressure === undefined) {\n    node.warn(\"One or more values are undefined\");\n    return null; // Stop the flow if values are missing\n}\n\n// Construct the corrected INSERT query (without timestamp)\nmsg.topic = `INSERT INTO sensor_readings (temperature, humidity, pressure)\n             VALUES (${temperature}, ${humidity}, ${pressure})`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 220,
+        "wires": [
+            [
+                "3d6188b59aec68b1",
+                "4f7b017720f552dd"
+            ]
+        ]
+    },
+    {
+        "id": "3d6188b59aec68b1",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 8",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "9d83c122a296a496",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 10",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "d07984f2a88485ee",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Retrieve Humidity",
+        "func": "// Construct the query to retrieve data for the chart\nmsg.topic = \"SELECT timestamp, humidity FROM sensor_readings ORDER BY timestamp DESC LIMIT 100\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 680,
+        "wires": [
+            [
+                "29baea0e90833319"
+            ]
+        ]
+    },
+    {
+        "id": "250fc3982ad00e33",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Format Humidity",
+        "func": "let rows = msg.payload; // Assuming msg.payload contains array of results from MySQL\nlet humidityData = rows.map(row => ({ x: row.timestamp, y: row.humidity }));\n\n// Format for the chart\nmsg.payload = [\n    {\n        series: [\"Humidity\"],\n        data: [humidityData],\n        labels: humidityData.map(item => new Date(item.x).toLocaleTimeString()) // Optional: format x-axis labels\n    }\n];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 680,
+        "wires": [
+            [
+                "71423e1b436b97e5"
+            ]
+        ]
+    },
+    {
+        "id": "71423e1b436b97e5",
+        "type": "ui_chart",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "fa590f63a7cb6e3e",
+        "order": 3,
+        "width": "12",
+        "height": "8",
+        "label": "Humidity Vs Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "-100",
+        "ymax": "100",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 910,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "329794220ab16608",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Format Temperature",
+        "func": "let rows = msg.payload; // Assuming msg.payload contains array of results from MySQL\nlet tempData = rows.map(row => ({ x: row.timestamp, y: row.temperature }));\n\n// Format for the chart\nmsg.payload = [\n    {\n        series: [\"Temperature\"],\n        data: [tempData],\n        labels: tempData.map(item => new Date(item.x).toLocaleTimeString()) // Optional: format x-axis labels\n    }\n];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 720,
+        "y": 740,
+        "wires": [
+            [
+                "023deb69d7c77d4f"
+            ]
+        ]
+    },
+    {
+        "id": "be9bab7337b692fa",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Format Pressure",
+        "func": "let rows = msg.payload; // Assuming msg.payload contains array of results from MySQL\nlet pressureData = rows.map(row => ({ x: row.timestamp, y: row.pressure }));\n\n// Format for the chart\nmsg.payload = [\n    {\n        series: [\"Pressure\"],\n        data: [pressureData],\n        labels: pressureData.map(item => new Date(item.x).toLocaleTimeString()) // Optional: format x-axis labels\n    }\n];\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 820,
+        "wires": [
+            [
+                "939f7360355d571c"
+            ]
+        ]
+    },
+    {
+        "id": "939f7360355d571c",
+        "type": "ui_chart",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "fa590f63a7cb6e3e",
+        "order": 2,
+        "width": "12",
+        "height": "8",
+        "label": "Pressure Vs Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "0",
+        "ymax": "1500",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "86400",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 930,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "023deb69d7c77d4f",
+        "type": "ui_chart",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "group": "fa590f63a7cb6e3e",
+        "order": 1,
+        "width": "12",
+        "height": "8",
+        "label": "Temperature Vs Time",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "-100",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 960,
+        "y": 740,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "01cb4316323836e2",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Retrieve Temp",
+        "func": "// Construct the query to retrieve data for the chart\nmsg.topic = \"SELECT timestamp, temperature FROM sensor_readings ORDER BY timestamp DESC LIMIT 100\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 260,
+        "y": 740,
+        "wires": [
+            [
+                "8897a3d7427b2b66"
+            ]
+        ]
+    },
+    {
+        "id": "1a019d3184dcdf9a",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Retrieve Pressure",
+        "func": "// Construct the query to retrieve data for the chart\nmsg.topic = \"SELECT timestamp, pressure FROM sensor_readings ORDER BY timestamp DESC LIMIT 100\";\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 820,
+        "wires": [
+            [
+                "eac7756cd3533a9d"
+            ]
+        ]
+    },
+    {
+        "id": "6d387b13348d99d8",
+        "type": "ui_ui_control",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "events": "change",
+        "x": 60,
+        "y": 680,
+        "wires": [
+            [
+                "d07984f2a88485ee"
+            ]
+        ]
+    },
+    {
+        "id": "1548f1d4b6cf2511",
+        "type": "ui_ui_control",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "events": "change",
+        "x": 60,
+        "y": 740,
+        "wires": [
+            [
+                "01cb4316323836e2"
+            ]
+        ]
+    },
+    {
+        "id": "2de8e81f3b058abc",
+        "type": "ui_ui_control",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "events": "change",
+        "x": 60,
+        "y": 820,
+        "wires": [
+            [
+                "1a019d3184dcdf9a"
+            ]
+        ]
+    },
+    {
+        "id": "a62faf10c7866938",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 11",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 320,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "3ee625e882efea2c",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 12",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "07ffbd78de8d5667",
+        "type": "status",
+        "z": "e4d0e744ba32bd85",
+        "name": "MQTT Status",
+        "scope": [
+            "a7cadf0970387193"
+        ],
+        "x": 110,
+        "y": 40,
+        "wires": [
+            [
+                "1b86979b146741bb"
+            ]
+        ]
+    },
+    {
+        "id": "386d68c86cb73864",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Wokwi Client Status",
+        "func": "msg.payload = (msg.payload.clientstatus == 'offline' ? 'Offline' : 'Online');\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 520,
+        "wires": [
+            [
+                "275a4b69ca46d6f0"
+            ]
+        ]
+    },
+    {
+        "id": "275a4b69ca46d6f0",
+        "type": "ui_text",
+        "z": "e4d0e744ba32bd85",
+        "group": "b3623416c933bf42",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "<font color={{value == 'Offline' ? 'grey' : 'blue'}}>{{value == 'Offline' ? 'Wokwi Offline 🚫' : 'Wokwi Online ✅'}}</font>",
+        "layout": "row-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 870,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "1b86979b146741bb",
+        "type": "json",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 310,
+        "y": 40,
+        "wires": [
+            [
+                "33960e7c2264fdd5"
+            ]
+        ]
+    },
+    {
+        "id": "33960e7c2264fdd5",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Wokwi Status",
+        "func": "msg.payload = `Wokwi Status: ${msg.status.text}`;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 40,
+        "wires": [
+            [
+                "3ee625e882efea2c",
+                "6eeac23dd90c706f"
+            ]
+        ]
+    },
+    {
+        "id": "5aa3c469ed1717cb",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4ad57ca8a4ecf1db",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 4",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "1e3a5508303558f4",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 880,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "6eeac23dd90c706f",
+        "type": "ui_text",
+        "z": "e4d0e744ba32bd85",
+        "group": "b3623416c933bf42",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mqtt Connection",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 900,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "05456d776415de7a",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 13",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 620,
+        "wires": []
+    },
+    {
+        "id": "004d8111ac7898dd",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 14",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "d7e1a00bfb870aa6",
+        "type": "mqtt in",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "topic": "garage/alert",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "76250f154120f64f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 70,
+        "y": 1020,
+        "wires": [
+            [
+                "ecd1616e4b3aba8a"
+            ]
+        ]
+    },
+    {
+        "id": "6ef7bd4b115df72b",
+        "type": "function",
+        "z": "e4d0e744ba32bd85",
+        "name": "Sensor Malfunctioning Alert",
+        "func": "// Parse the alert payload\nlet alert = JSON.parse(msg.payload);\n\n// Extract alert details (e.g., temperature out of range)\nmsg.alertMessage = alert.alert;\nmsg.value = alert.value;\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 480,
+        "y": 1020,
+        "wires": [
+            [
+                "a858068b7ac6119b",
+                "ba6ab01541c6d6c7"
+            ]
+        ]
+    },
+    {
+        "id": "ecd1616e4b3aba8a",
+        "type": "json",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 250,
+        "y": 1020,
+        "wires": [
+            [
+                "6ef7bd4b115df72b"
+            ]
+        ]
+    },
+    {
+        "id": "a858068b7ac6119b",
+        "type": "ui_text",
+        "z": "e4d0e744ba32bd85",
+        "group": "21310330e75f33a9",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Notifications",
+        "format": "{{msg.alertMessage !== \"\" ? msg.alertMessage \":\" msg.value : \"\"}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 750,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "ba6ab01541c6d6c7",
+        "type": "ui_toast",
+        "z": "e4d0e744ba32bd85",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 770,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "6ce79d9b9b39e442",
+        "type": "mqtt in",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "topic": "garage/door/command",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "76250f154120f64f",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 100,
+        "y": 1100,
+        "wires": [
+            [
+                "2ed87ba85459481e"
+            ]
+        ]
+    },
+    {
+        "id": "a65ffb878e7dfe72",
+        "type": "ui_switch",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "label": "Open/Close Door",
+        "tooltip": "",
+        "group": "b3623416c933bf42",
+        "order": 3,
+        "width": "6",
+        "height": "2",
+        "passthru": true,
+        "decouple": "false",
+        "topic": "garage/door/command",
+        "topicType": "flow",
+        "style": "",
+        "onvalue": "{\"msg\":\"open\"}",
+        "onvalueType": "json",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "{\"msg\":\"close\"}",
+        "offvalueType": "json",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 470,
+        "y": 1100,
+        "wires": [
+            [
+                "e8bc7c42d9cd8a3c"
+            ]
+        ]
+    },
+    {
+        "id": "e8bc7c42d9cd8a3c",
+        "type": "debug",
+        "z": "e4d0e744ba32bd85",
+        "name": "debug 15",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 680,
+        "y": 1100,
+        "wires": []
+    },
+    {
+        "id": "2ed87ba85459481e",
+        "type": "json",
+        "z": "e4d0e744ba32bd85",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 290,
+        "y": 1100,
+        "wires": [
+            [
+                "a65ffb878e7dfe72"
+            ]
+        ]
+    },
+    {
+        "id": "29baea0e90833319",
+        "type": "mysql",
+        "z": "e4d0e744ba32bd85",
+        "mydb": "4973ea20bc2509ad",
+        "name": "Retrieve Data",
+        "x": 480,
+        "y": 680,
+        "wires": [
+            [
+                "250fc3982ad00e33",
+                "05456d776415de7a"
+            ]
+        ]
+    },
+    {
+        "id": "8897a3d7427b2b66",
+        "type": "mysql",
+        "z": "e4d0e744ba32bd85",
+        "mydb": "4973ea20bc2509ad",
+        "name": "Retrieve Data",
+        "x": 480,
+        "y": 740,
+        "wires": [
+            [
+                "329794220ab16608",
+                "004d8111ac7898dd"
+            ]
+        ]
+    },
+    {
+        "id": "eac7756cd3533a9d",
+        "type": "mysql",
+        "z": "e4d0e744ba32bd85",
+        "mydb": "4973ea20bc2509ad",
+        "name": "Retrieve Data",
+        "x": 480,
+        "y": 820,
+        "wires": [
+            [
+                "be9bab7337b692fa",
+                "9d83c122a296a496"
+            ]
+        ]
+    },
+    {
+        "id": "4f7b017720f552dd",
+        "type": "mysql",
+        "z": "e4d0e744ba32bd85",
+        "mydb": "4973ea20bc2509ad",
+        "name": "Save Data",
+        "x": 890,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    }
+]
